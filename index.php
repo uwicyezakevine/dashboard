@@ -1,3 +1,11 @@
+<?php
+    $current_page = basename($_SERVER['PHP_SELF']);
+    // echo $current_page;
+
+    $age = 12;
+    // echo $age >= 18 ? "Above age" : "Under age";
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,15 +18,36 @@
 </head>
 <body>
     <div class="grid grid-cols-12">
-        <div class="p-4 col-span-2 min-h-[100vh]">
-          <p>Dashboard</p><br>
+        <div class="py-5 pl-5 col-span-2 min-h-[100vh]">
+          <!-- //logo -->
+          <div class="pl-10 flex items-center gap-3 mt-3">
+            <img src="./coding.png" alt="" class="w-[50px]" srcset="">
+            <p class="font-bold text-[#333]">Applify<span class="text-blue-500 font-bold">.</span></p>
+          </div>
+
+          <!-- //links -->
+         <div class="my-10 grid gap-5">
+            <div class="relative  flex items-center gap-5 pl-10 <?php echo $current_page == 'index.php' ? "text-blue-500" : "" ?>">
+              <i class="bi bi-briefcase"></i>
+              <p>Dashboard</p>
+              <span class="h-[30px] w-[4px] <?php echo $current_page == 'index.php' ? "bg-blue-500" : "" ?> rounded-l-[10px] absolute right-0"></span>
+            </div>
+            <div class="flex items-center gap-5 pl-10 <?php echo $current_page == 'jobs.php' ? "text-blue-500" : "" ?>">
+              <i class="bi bi-briefcase"></i>
+              <p>Jobs</p>
+              <span class="h-[30px] w-[4px] <?php echo $current_page == 'jobs.php' ? "bg-blue-500" : "" ?> rounded-l-[10px] absolute right-0"></span>
+            </div>
+         </div>
+
+
+          <!-- <p>Dashboard</p><br>
           <p>jobs</p><br>
           <p>schedule</p><br>
           <p>Document</p><br>
           <p>Statistics</p><br>
           <p>Community</p><br>
           <p>Message</p><br>
-          <p>Logout</p><br>
+          <p>Logout</p><br> -->
         </div>
         <div class="p-5 bg-[whitesmoke] col-span-7 min-h-[100vh]">
           
@@ -81,22 +110,22 @@
 
             <!-- ///charts 1 -->
              <div class="grid grid-cols-12 gap-4">
-                <div class="p-5 bg-[white] col-span-8 min-h-[20vh] relative bg-white p-3 rounded-[5px] justify-between shadow-sm border-1 border-black-30">
-                  <p>statistic of active Applications</p>
+                <div class="p-5 col-span-8 min-h-[20vh] relative bg-white rounded-[5px] justify-between border-1 border-gray-200">
+                  <!-- <p>statistic of active Applications</p>
                   <p>100%</p>
                   <p>80%</p>
                   <p>60%</p>
                   <p>40%</p>
-                  <p>20%</p>
+                  <p>20%</p> -->
                     
                 </div>
-                <div class="p-5 bg-[white] col-span-4 min-h-[20vh] relative bg-white p-3 rounded-[5px] justify-between shadow-sm border-1 border-black-300">
-                  <p>acquistions</p>
+                <div class="p-5  col-span-4 min-h-[20vh] relative bg-white rounded-[5px] justify-between border-1 border-gray-200">
+                  <!-- <p>acquistions</p>
                   <p>Applications</p>
                   <p>shortlisted</p>
                   <p>rejected</p>
                   <p>on hold</p>
-                  <p>finalised</p>
+                  <p>finalised</p> -->
                     
                     
                 </div>
