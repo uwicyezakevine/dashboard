@@ -1,6 +1,6 @@
 <div class="px-5">
     <!-- //actions -->
-    <div class="flex items-center justify-end gap-7 py-5 text-xl">
+    <div class="flex sticky top-0 bg-white items-center justify-end gap-7 py-5 text-xl">
         <i class="bi bi-question-circle"></i>
         <i class="bi bi-gear"></i>
         <div class="bg-black rounded-full overflow-hidden">
@@ -31,19 +31,103 @@
         </div>
     </div>
 
-    <div class="bg-orange-400 rounded-md p-3 relative">
-        <div class="flex items-center gap-4 ">
-            <div class="bg-orange-200 p-3 rounded-md text-3xl font-bold text-white">
-                95
-            </div>
-            <div>
-                <p class="font-bold text-white">Sr. Android developer</p>
-                <p class="text-gray-200">Total Applications</p>
-            </div>
-            <div class="absolute top-2 right-2">
-                <?php
+    <div class="grid grid-cols-1 gap-4">
+        <div class="bg-orange-400 rounded-md p-3 relative">
+            <div class="flex items-center gap-4 ">
+                <div class="bg-orange-200 p-3 rounded-md text-3xl font-bold text-white">
+                    95
+                </div>
+                <div>
+                    <p class="font-bold text-white">Sr. Android developer</p>
+                    <p class="text-gray-200">Total Applications</p>
+                </div>
+                <div class="absolute top-2 right-2">
+                    <?php
                     require './components/switch.php';
-                ?>
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="bg-orange-400 rounded-md p-3 relative">
+            <div class="flex items-center gap-4 ">
+                <div class="bg-orange-200 p-3 rounded-md text-3xl font-bold text-white">
+                    95
+                </div>
+                <div>
+                    <p class="font-bold text-white">Sr. Android developer</p>
+                    <p class="text-gray-200">Total Applications</p>
+                </div>
+                <div class="absolute top-2 right-2">
+                    <?php
+                    require './components/switch.php';
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-center my-10">
+        <p class="font-bold">Reminders</p>
+        <div class="grid grid-cols-1 gap-2">
+            <button class="py-1 px-3 bg-gray-100 rounded-md font-bold"><i class="bi bi-caret-right"></i></button>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4">
+        <div class=" rounded-md p-3 relative">
+            <div class="flex items-center gap-4 ">
+                <div class="bg-orange-300 p-3 rounded-md text-3xl font-bold text-white">
+                    95
+                </div>
+                <div>
+                    <p class="font-bold">Sr. Android developer</p>
+                    <p class="text-gray-600">Total Applications</p>
+                </div>
+                <div class="absolute top-2 right-2 text-[10px]">
+                    6:30 PM
+                </div>
+            </div>
+        </div>
+        <div class=" rounded-md p-3 relative">
+            <div class="flex items-center gap-4 ">
+                <div class="bg-orange-300 p-3 rounded-md text-3xl font-bold text-white">
+                    95
+                </div>
+                <div>
+                    <p class="font-bold">Sr. Android developer</p>
+                    <p class="text-gray-600">Total Applications</p>
+                </div>
+                <div class="absolute top-2 right-2 text-[10px]">
+                    6:30 PM
+                </div>
+            </div>
+        </div>
+        <div class=" rounded-md p-3 relative">
+            <div class="flex items-center gap-4 ">
+                <div class="bg-orange-300 p-3 rounded-md text-3xl font-bold text-white">
+                    95
+                </div>
+                <div>
+                    <p class="font-bold">Sr. Android developer</p>
+                    <p class="text-gray-600">Total Applications</p>
+                </div>
+                <div class="absolute top-2 right-2 text-[10px]">
+                    6:30 PM
+                </div>
+            </div>
+        </div>
+        <div class=" rounded-md p-3 relative">
+            <div class="flex items-center gap-4 ">
+                <div class="bg-orange-300 p-3 rounded-md text-3xl font-bold text-white">
+                    95
+                </div>
+                <div>
+                    <p class="font-bold">Sr. Android developer</p>
+                    <p class="text-gray-600">Total Applications</p>
+                </div>
+                <div class="absolute top-2 right-2 text-[10px]">
+                    6:30 PM
+                </div>
             </div>
         </div>
     </div>

@@ -84,21 +84,15 @@
             <!-- ///charts 1 -->
              <div class="grid grid-cols-12 gap-4">
                 <div class="p-5 col-span-8 min-h-[20vh] relative bg-white rounded-[5px] justify-between border-1 border-gray-200">
-                  <!-- <p>statistic of active Applications</p>
-                  <p>100%</p>
-                  <p>80%</p>
-                  <p>60%</p>
-                  <p>40%</p>
-                  <p>20%</p> -->
-                    
+                  <?php
+                    include './components/charts/bar.php';
+                  ?>
                 </div>
                 <div class="p-5  col-span-4 min-h-[20vh] relative bg-white rounded-[5px] justify-between border-1 border-gray-200">
-                  <!-- <p>acquistions</p>
-                  <p>Applications</p>
-                  <p>shortlisted</p>
-                  <p>rejected</p>
-                  <p>on hold</p>
-                  <p>finalised</p> -->
+                  <div class="flex items-center justify-between">
+                    <p class="font-bold">Acquisitions</p>
+                    <p class="text-sm">Month</p>
+                  </div>
                     
                     
                 </div>
@@ -110,7 +104,7 @@
              <div></div>
 
         </div>
-        <div class="p-4  col-span-3 min-h-[100vh]">
+        <div class="px-4 pb-4 col-span-3 min-h-[100vh] max-h-[100vh] overflow-y-scroll">
           <?php
             include './components/right_aside.php';
           ?>
