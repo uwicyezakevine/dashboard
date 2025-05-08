@@ -18,37 +18,10 @@
 </head>
 <body>
     <div class="grid grid-cols-12">
-        <div class="py-5 pl-5 col-span-2 min-h-[100vh]">
-          <!-- //logo -->
-          <div class="pl-10 flex items-center gap-3 mt-3">
-            <img src="./coding.png" alt="" class="w-[50px]" srcset="">
-            <p class="font-bold text-[#333]">Applify<span class="text-blue-500 font-bold">.</span></p>
-          </div>
-
-          <!-- //links -->
-         <div class="my-10 grid gap-5">
-            <div class="relative  flex items-center gap-5 pl-10 <?php echo $current_page == 'index.php' ? "text-blue-500" : "" ?>">
-              <i class="bi bi-briefcase"></i>
-              <p>Dashboard</p>
-              <span class="h-[30px] w-[4px] <?php echo $current_page == 'index.php' ? "bg-blue-500" : "" ?> rounded-l-[10px] absolute right-0"></span>
-            </div>
-            <div class="flex items-center gap-5 pl-10 <?php echo $current_page == 'jobs.php' ? "text-blue-500" : "" ?>">
-              <i class="bi bi-briefcase"></i>
-              <p>Jobs</p>
-              <span class="h-[30px] w-[4px] <?php echo $current_page == 'jobs.php' ? "bg-blue-500" : "" ?> rounded-l-[10px] absolute right-0"></span>
-            </div>
-         </div>
-
-
-          <!-- <p>Dashboard</p><br>
-          <p>jobs</p><br>
-          <p>schedule</p><br>
-          <p>Document</p><br>
-          <p>Statistics</p><br>
-          <p>Community</p><br>
-          <p>Message</p><br>
-          <p>Logout</p><br> -->
-        </div>
+        <!-- //aside bar -->
+        <?php
+          include './components/aside.php';
+        ?>
         <div class="p-5 bg-[whitesmoke] col-span-7 min-h-[100vh]">
           
 
@@ -138,84 +111,87 @@
 
         </div>
         <div class="p-4  col-span-3 min-h-[100vh]">
+          <?php
+            include './components/right_aside.php';
+          ?>
         </div>
     </div>
 
-    <script>
-        const ctx1 = document.querySelector('.myDoughnutChart').getContext('2d');
-        const ctx2 = document.querySelector('.myDoughnutChartt').getContext('2d');
-        const ctx3 = document.querySelector('.myDoughnutCharttt').getContext('2d');
-        const myDoughnutChart = new Chart(ctx1, {
-          type: 'doughnut',
-          data: {
-            // labels: ['Red', 'Blue', 'Yellow'],
-            datasets: [{
-              label: 'My Dataset',
-              data: [300, 50, 100],
-              backgroundColor: ['purple', 'lightblue', 'green']
-            }]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top',
-              },
-              title: {
-                // display: true,
-                text: 'Sample Doughnut Chart'
+      <script>
+          const ctx1 = document.querySelector('.myDoughnutChart').getContext('2d');
+          const ctx2 = document.querySelector('.myDoughnutChartt').getContext('2d');
+          const ctx3 = document.querySelector('.myDoughnutCharttt').getContext('2d');
+          const myDoughnutChart = new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+              // labels: ['Red', 'Blue', 'Yellow'],
+              datasets: [{
+                label: 'My Dataset',
+                data: [300, 50, 100],
+                backgroundColor: ['purple', 'lightblue', 'green']
+              }]
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: {
+                  position: 'top',
+                },
+                title: {
+                  // display: true,
+                  text: 'Sample Doughnut Chart'
+                }
               }
             }
-          }
-        });
-        const myDoughnutChart2 = new Chart(ctx2, {
-          type: 'doughnut',
-          data: {
-            // labels: ['Red', 'Blue', 'Yellow'],
-            datasets: [{
-              label: 'My Dataset',
-              data: [300, 50, 100],
-              backgroundColor: ['purple', 'lightblue', 'green']
-            }]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top',
-              },
-              title: {
-                // display: true,
-                text: 'Sample Doughnut Chart'
+          });
+          const myDoughnutChart2 = new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+              // labels: ['Red', 'Blue', 'Yellow'],
+              datasets: [{
+                label: 'My Dataset',
+                data: [300, 50, 100],
+                backgroundColor: ['purple', 'lightblue', 'green']
+              }]
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: {
+                  position: 'top',
+                },
+                title: {
+                  // display: true,
+                  text: 'Sample Doughnut Chart'
+                }
               }
             }
-          }
-        });
+          });
 
-        const myDoughnutChart3 = new Chart(ctx3, {
-          type: 'doughnut',
-          data: {
-            // labels: ['Red', 'Blue', 'Yellow'],
-            datasets: [{
-              label: 'My Dataset',
-              data: [300, 50, 100],
-              backgroundColor: ['purple', 'lightblue', 'green']
-            }]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top',
-              },
-              title: {
-                // display: true,
-                text: 'Sample Doughnut Chart'
+          const myDoughnutChart3 = new Chart(ctx3, {
+            type: 'doughnut',
+            data: {
+              // labels: ['Red', 'Blue', 'Yellow'],
+              datasets: [{
+                label: 'My Dataset',
+                data: [300, 50, 100],
+                backgroundColor: ['purple', 'lightblue', 'green']
+              }]
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: {
+                  position: 'top',
+                },
+                title: {
+                  // display: true,
+                  text: 'Sample Doughnut Chart'
+                }
               }
             }
-          }
-        });
-      </script>
+          });
+        </script>
 
 </body>
 </html>
